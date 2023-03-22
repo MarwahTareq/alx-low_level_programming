@@ -1,6 +1,7 @@
-#include "main.h"
+#include<main.h>
 /**
-*main - Entry point
+*main -print _putchar
+*is written by mbah
 *Return: Always 0
 */
 int main(void)
@@ -14,5 +15,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-return (0);
+return(0);
 }
