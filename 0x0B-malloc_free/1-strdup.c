@@ -10,8 +10,8 @@ char *_strdup(char *str)
 int i = 0;
 int size = 0;
 	char *m;
-	if (str == null)
-		return (null);
+	if (str == NULL)
+		return (NULL);
 	for (; str[size] != '\0'; size++)
 		;
 	/*+1 on the size puts the end of string character*/
@@ -21,7 +21,7 @@ int size = 0;
 	else
 	{
 		for (; i < size; i++)
-			m[i] = str[m];
+			m[i] = str[i];
 	}
 	return (m);
 }
