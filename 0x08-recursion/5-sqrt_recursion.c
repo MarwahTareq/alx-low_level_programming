@@ -2,15 +2,13 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: returns the natural square root of a number
- *
+ *@val: square root
  * Return: that returns the natural square root
  */
+int square(int n, int val)
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-
-	return (-1);
-	return (actual_sqrt_recursion(n, 0));
+	return (square(n, 1));
 }
 
 /**
@@ -21,14 +19,13 @@ int _sqrt_recursion(int n)
  *
  * Return: the resulting sqaure root
  */
-int actual_sqrt_recursion(int n, int i)
+int square(int n, int val)
 {
-	if (i * i > n)
+	if (val * val == n)
 
-		return (-1);
-
-	if (i * i == n)
-
-		return (i);
-	return (actual_sqrt_recursion(n, i + 1));
+		return (val);
+else if (val * val < n)
+		return (square(n, val + 1));
+	else 
+	return (-1);
 }
